@@ -1,0 +1,84 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: 2px solid #8d555e;
+	width: 250px;
+	border-radius: 20px;
+	padding: 5px;
+	height: 350px;
+	align-items: center;
+	justify-content: space-around;
+	transition: transform 0.3s;
+	cursor: pointer;
+	animation-duration: 4s;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerImage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	max-width: 200px;
+	height: 200px;
+}
+
+.containerImage > img {
+	max-width: 200px;
+	aspect-ratio: auto;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: left;
+	gap: 5px;
+	padding: 5px;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
+}
+
+.info > span {
+	width: 100%;
+	padding: 5px;
+}
+
+.title {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.authors {
+	font-size: 1rem;
+}
+
+.container:active {
+	transform: scale(1.05);
+}
+
+@media (any-hover: hover) {
+	.container:hover {
+		animation: rotateAnimation 3s linear infinite;
+	}
+}
+
+@keyframes rotateAnimation {
+	0% {
+		transform: perspective(500px) rotateY(0deg);
+	}
+	25% {
+		transform: perspective(500px) rotateY(25deg);
+	}
+	50% {
+		transform: perspective(500px) rotateY(0deg);
+	}
+	75% {
+		transform: perspective(500px) rotateY(-25deg);
+	}
+	100% {
+		transform: perspective(500px) rotateY(0deg);
+	}
+}

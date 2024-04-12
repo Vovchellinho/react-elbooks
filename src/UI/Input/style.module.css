@@ -1,0 +1,12 @@
+.inputContainer {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputContainer::placeholder {
+	font-size: 1.2rem;
+	transition: font-size 0.3s;
+}
+
+.inputContainer:focus::placeholder {
+	font-size: 1rem;
+}

@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.section {
+	width: 100%;
+}
+
+.searchBlock {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    backdrop-filter: blur(1px);
+}

@@ -1,0 +1,54 @@
+.form {
+	display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+	height: 35px;
+	flex-wrap: nowrap;
+}
+
+.form > input {
+    border: 1px solid #8d555e;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.form > input:focus {
+	outline: none;
+	border: 2px solid #8d555e;
+}
+
+.form > button:active {
+	background: #1a284d;
+}
+
+.form > button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #8d555e;
+	transition: 0.3s;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form > button > img {
+	width: 30px;
+	height: 30px;
+}
+
+@media (any-hover: hover) {
+	.form > button:hover {
+		transform: scale(1.05);
+	}
+}
