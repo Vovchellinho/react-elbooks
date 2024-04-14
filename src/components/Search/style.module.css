@@ -10,7 +10,7 @@
 }
 
 .form > input {
-    border: 1px solid #8d555e;
+    border: none;
     width: 100%;
     font-size: 1.3rem;
     padding: 5px;
@@ -21,7 +21,6 @@
 
 .form > input:focus {
 	outline: none;
-	border: 2px solid #8d555e;
 }
 
 .form > button:active {

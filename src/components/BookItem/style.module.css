@@ -1,18 +1,18 @@
 .container {
 	display: flex;
-	flex-direction: column;
-	position: relative;
-	border: 2px solid #8d555e;
-	width: 250px;
-	border-radius: 20px;
-	padding: 5px;
-	height: 350px;
-	align-items: center;
-	justify-content: space-around;
-	transition: transform 0.3s;
-	cursor: pointer;
-	animation-duration: 4s;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px;
+    height: 350px;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s;
+    cursor: pointer;
+    animation-duration: 4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .containerImage {
@@ -37,6 +37,7 @@
 	gap: 5px;
 	padding: 5px;
 	height: 150px;
+	color: #3d3436;
 	align-items: center;
 	justify-content: center;
 }
@@ -61,7 +62,7 @@
 
 @media (any-hover: hover) {
 	.container:hover {
-		animation: rotateAnimation 3s linear infinite;
+		animation: rotateAnimation 5s linear infinite;
 	}
 }
 

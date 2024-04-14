@@ -1,0 +1,51 @@
+.container {
+	width: 35px;
+	height: 35px;
+}
+
+.heart {
+    width: 35px;
+    height: 35px;
+	position: relative;
+}
+
+.heart > img {
+	width: 35px;
+	height: 35px;
+}
+
+.heartShape {
+	width: 18px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.leftHeart {
+	transform: rotate(-45deg);
+	left: 4.2px;
+	border: 1.5px solid black;
+	background-color: #FFFFFF;
+}
+
+.rightHeart {
+	transform: rotate(45deg);
+	right: 4px;
+	border: 1.5px solid black;
+	background-color: #FFFFFF;
+}
+
+.active {
+	border: 0px solid black;
+	background-color: #ff4242;
+}
+
+	.extraHeart {
+	transform: scale(0.85) rotate(-45deg) translate(0px, 1.1px);
+	z-index: 1;
+	background-color: #FFFFFF;
+	border: 0px solid black;
+}

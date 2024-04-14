@@ -1,6 +1,5 @@
 import { FormEvent } from "react";
 import styles from "./style.module.css";
-import Button from "UI/Button";
 import Input from "UI/Input";
 import { useState } from "react";
 import SearchIcon from "./../../assets/icons/search-icon.png";
@@ -14,11 +13,9 @@ const Search = ({onSubmit}: ISearchProps) => {
 
 	const submit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		if (searchValue === '') {
-			console.log("empty name");
-		} else {
+		if (searchValue !== '') {
 			onSubmit(searchValue);
-		}
+		};
 	};
 
 	return (
